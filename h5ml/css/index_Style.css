@@ -5,12 +5,12 @@ body{
 }
 
 /*-----------divs-------------*/
-
-.links-container, #container-Videogames{
+#container-Videogames{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60vh;
+    width: 100%;
 }
 
 .corp-container, .linkref-Videogame{
@@ -21,7 +21,37 @@ body{
     scale: 1.1;
     transition: all 0.3s ease;
     background-color: rgb(201, 198, 198);
+    box-shadow: #444242 10px 10px 10px 1px;
 }
+
+/*-----------Tablas------------*/
+#corps-table{
+    margin: 7.4vh auto;
+}
+
+.corps-TableItem{
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.corps-TableItem:hover{
+    transform: translateX(-2vw);
+    background-color: rgba(66, 66, 66, 0.147);
+    box-shadow: #444242 10px 0 10px 10px;
+}
+
+.corps-TableItem .table-title{
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.link-empresa li{
+    color: #444242;
+    font-size: 20px;
+    list-style-type: none;
+}
+
 /*-----------titulos----------*/
 .mainTitles{
     color: crimson;
@@ -33,15 +63,17 @@ body{
 
 .subtitles{
     color: rgb(195, 31, 64);
-    background-color: rgba(201, 42, 74, 0.356);
-    text-align: center;
+    padding: 5px;
     font-size: 40px;
+    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(201, 42, 74, 0.24);
 }
 
-a .corp-title-links{
-    font-size: 20px;
-    font-style: italic;
+.corp-title-links{
+    font-size: 25px;
+    font-style: oblique;
+    color: black;
 }
 
 /*------------Textos---------------*/
@@ -50,13 +82,7 @@ a .corp-title-links{
     font-family: 'Times New Roman', Times, serif;
 }
 
-/*links*/
-.link-empresa{
-    color: black;
-    text-decoration: none;
-    text-align: center;
-}
-
+/*----------links--------*/
 .linkref-Videogame a{
     text-decoration: none;
 }
@@ -70,6 +96,10 @@ a .corp-title-links{
 .linkref-Videogame p b{
     color: #444242;
     padding-left: 5px;
+}
+
+.link-empresa{
+    text-decoration: none;
 }
 /*------------Imagenes---------------*/
 .mainImage{
