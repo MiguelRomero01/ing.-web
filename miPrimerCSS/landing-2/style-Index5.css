@@ -1,0 +1,21 @@
+
+table{
+     text-align: center;
+     margin: auto;
+     border-collapse: collapse; 
+}
+
+thead{
+     background-color: skyblue;
+     color: white;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
+}
+
+th{
+     padding: 6px 20px;
+}
+
+td{
+     border-bottom: 1px solid gray;
+}
