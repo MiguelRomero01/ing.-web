@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgb(255, 255, 255),rgb(209, 209, 209));
+}
+
+/*-----------divs-------------*/
+
+.links-container, #container-Videogames{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.corp-container, .linkref-Videogame{
+    margin-left: 5vw;
+}
+
+.corp-container:hover,.linkref-Videogame:hover{
+    scale: 1.1;
+    transition: all 0.3s ease;
+    background-color: rgb(201, 198, 198);
+}
+/*-----------titulos----------*/
+.mainTitles{
+    color: crimson;
+    font-size: 50px;
+    margin: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.subtitles{
+    color: rgb(195, 31, 64);
+    background-color: rgba(201, 42, 74, 0.356);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a .corp-title-links{
+    font-size: 20px;
+    font-style: italic;
+}
+
+/*------------Textos---------------*/
+.mainText{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*links*/
+.link-empresa{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.linkref-Videogame a{
+    text-decoration: none;
+}
+
+.linkref-Videogame p i{
+    color: black;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.linkref-Videogame p b{
+    color: #444242;
+    padding-left: 5px;
+}
+/*------------Imagenes---------------*/
+.mainImage{
+    width: 90%;
+    height: auto;
+    margin-bottom: 8vh;
+}
+
+.corp-img, .videogame-img{
+    width: 14em;
+    height: 12.5em;
+}
