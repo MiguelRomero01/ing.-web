@@ -15,11 +15,11 @@ body{
 
 .corp-container, .linkref-Videogame{
     margin-left: 5vw;
+    transition: all 0.3s ease;
 }
 
 .corp-container:hover,.linkref-Videogame:hover{
     scale: 1.1;
-    transition: all 0.3s ease;
     background-color: rgb(201, 198, 198);
     box-shadow: #444242 10px 10px 10px 1px;
 }
@@ -50,6 +50,7 @@ body{
     color: #444242;
     font-size: 20px;
     list-style-type: none;
+    margin-left: -30px;
 }
 
 /*-----------titulos----------*/
@@ -109,6 +110,6 @@ body{
 }
 
 .corp-img, .videogame-img{
-    width: 14em;
-    height: 12.5em;
+    width: 15em;
+    height: 13em;
 }
