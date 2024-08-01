@@ -3,6 +3,38 @@ body{
     margin: 0;
     background: linear-gradient(rgb(255, 255, 255),rgb(209, 209, 209));
 }
+/*---------navbar-------------*/
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 50px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 10px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 7px;
+}
+
+.nav-menu a:hover {
+    background-color: #29C3E8;
+}
 
 /*-----------divs-------------*/
 #container-Videogames{
