@@ -1,7 +1,7 @@
-body{
+body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(rgb(255, 255, 255),rgb(209, 209, 209));
+    background: linear-gradient(rgb(255, 255, 255), rgb(209, 209, 209));
 }
 /*---------navbar-------------*/
 .navbar {
@@ -36,8 +36,10 @@ body{
     background-color: #29C3E8;
 }
 
+
 /*-----------divs-------------*/
-#container-Videogames{
+
+#container-Videogames {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,48 +47,54 @@ body{
     width: 100%;
 }
 
-.corp-container, .linkref-Videogame{
+.corp-container,
+.linkref-Videogame {
     margin-left: 5vw;
     transition: all 0.3s ease;
 }
 
-.corp-container:hover,.linkref-Videogame:hover{
+.corp-container:hover,
+.linkref-Videogame:hover {
     scale: 1.1;
     background-color: rgb(201, 198, 198);
     box-shadow: #444242 10px 10px 10px 1px;
 }
 
+
 /*-----------Tablas------------*/
-#corps-table{
+
+#corps-table {
     margin: 7.4vh auto;
 }
 
-.corps-TableItem{
+.corps-TableItem {
     margin-bottom: 20px;
     transition: all 0.3s ease;
 }
 
-.corps-TableItem:hover{
+.corps-TableItem:hover {
     transform: translateX(-2vw);
     background-color: rgba(66, 66, 66, 0.147);
     box-shadow: #444242 10px 0 10px 10px;
 }
 
-.corps-TableItem .table-title{
+.corps-TableItem .table-title {
     text-align: center;
     align-items: center;
     padding: 10px;
 }
 
-.link-empresa li{
+.link-empresa li {
     color: #444242;
     font-size: 20px;
     list-style-type: none;
     margin-left: -30px;
 }
 
+
 /*-----------titulos----------*/
-.mainTitles{
+
+.mainTitles {
     color: crimson;
     font-size: 50px;
     margin: 4vh;
@@ -94,7 +102,7 @@ body{
     font-weight: bolder;
 }
 
-.subtitles{
+.subtitles {
     color: rgb(195, 31, 64);
     padding: 5px;
     font-size: 40px;
@@ -103,45 +111,53 @@ body{
     background-color: rgba(201, 42, 74, 0.24);
 }
 
-.corp-title-links{
+.corp-title-links {
     font-size: 25px;
     font-style: oblique;
     color: black;
 }
 
+
 /*------------Textos---------------*/
-.mainText{
+
+.mainText {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 /*----------links--------*/
-.linkref-Videogame a{
+
+.linkref-Videogame a {
     text-decoration: none;
 }
 
-.linkref-Videogame p i{
+.linkref-Videogame p i {
     color: black;
     font-weight: bolder;
     padding-left: 5px;
 }
 
-.linkref-Videogame p b{
+.linkref-Videogame p b {
     color: #444242;
     padding-left: 5px;
 }
 
-.link-empresa{
+.link-empresa {
     text-decoration: none;
 }
+
+
 /*------------Imagenes---------------*/
-.mainImage{
-    width: 90%;
-    height: auto;
+
+.mainImage {
+    width: 50vw;
+    height: 40vw;
     margin-bottom: 8vh;
 }
 
-.corp-img, .videogame-img{
+.corp-img,
+.videogame-img {
     width: 15em;
     height: 13em;
 }
