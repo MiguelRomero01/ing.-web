@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videojuegos</title>
     <link rel="stylesheet" href="css/index_Style.css" />
+
 </head>
 <body>
-    <div class="Login-container">
-        <h1 class="Login-mainTitle">Iniciar Sesión</h1>
-        
-        <form class="Login-form">
-            <label class="labelText" for="username">Usuario</label>
-            <input type="text" id="username" class="Login-inputs" placeholder="usuario" required>
-
-            <label class="labelText" for="password">Contraseña</label>
-            <input type="password" id="password" class="Login-inputs" placeholder="Contraseña" required>
-        </form>
-        
-        <button type="submit" onclick="UserLogin()">Iniciar Sesión</button>
-
-        <p id="login-ErrorText"></p>
-        <span class="Login-text-RecoverPassword">Si no tienes un cuenta, <a href="#" id="register-link">Regístrate Acá</a></span>
-    </div>
-
+    <main>
+        <div id="login">
+            <div class="Login-container">
+                <h1 id="Login-mainTitle">Iniciar Sesión</h1>
+                
+                <form class="Login-form">
+                    <input type="text" id="username" class="Login-inputs" placeholder="usuario" required>
+    
+                    <input type="password" id="password" class="Login-inputs" placeholder="Contraseña" required>
+                </form>
+                
+                <button type="submit" id="login-button" onclick="UserLogin()">Iniciar Sesión</button>
+    
+                <p id="login-ErrorText"></p>
+                <span class="Login-text-RecoverPassword">Si no tienes un cuenta, <a href="#" id="register-link">Regístrate Acá</a></span>
+            </div>
+        </div>
+    </main>
     <script src="JS/index/Login.js"></script>
 </body>
 </html>
