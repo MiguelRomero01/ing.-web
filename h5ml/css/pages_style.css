@@ -1,12 +1,10 @@
 /*------divs--------*/
-
 .gamesMicrosoft-container {
     display: flex;
 }
 
 
 /*--------titles-------*/
-
 .subtitles-games {
     text-align: center;
     font-size: 35px;
