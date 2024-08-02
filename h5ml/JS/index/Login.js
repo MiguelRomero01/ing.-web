@@ -5,8 +5,8 @@ function UserLogin(){
      const errorMsg = document.getElementById('login-ErrorText');
 
      try{
-          if (username === 'admin' && password === '123'){
-               alert('true');
+          if (username === 'a' && password === '1'){
+               window.location.href = "/h5ml/pages/mainPage.html";
           }
           else{
                errorMsg.innerText = 'Tu usuario o contraseña es incorrecto'
