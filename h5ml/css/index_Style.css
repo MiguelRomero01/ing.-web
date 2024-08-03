@@ -1,11 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    background:linear-gradient(#929292,#000000);
 }
 
 /*-----------Container-------*/
 #login {
+    background: url(../assets/imgs/background_Index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,39 +18,58 @@ body{
     text-align: center;
     max-width: 350px;
     width: 100%;
-    box-shadow: 1px 1px 10px 3px gray;
+    box-shadow: 3px 3px 30px 10px black;
     padding: 0px 15px 20px;
-    border-radius: 15px;
     margin: 0; 
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
 }
+
 /*----titles---------*/
 #Login-mainTitle{
-    font-size: 43px;
-    color: #ffffff;
-    text-shadow: 5px 3px 5px #000000;
+    font-size: 50px;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-style: normal;
 }
 
 /*-------form--------*/
-.Login-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .Login-form input{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-    width: 85%;
-    font-size: 23px;
-    background-color: transparent;
-    border-color: transparent;
-    border-bottom: 2px solid black;
+    border:none;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    font-size: 22px;
     outline: none;
+    transition: all 0.3s ease;
 }
 
-.Login-form input::placeholder{
-    color: rgb(201, 201, 201);
-    font-size: 20px;
+.Login-form input:hover{
+    scale: 1.017;
+    background-color: #dddbdb;
+    border: #000000 2px;
+}
+
+.labels-formsInput{
+    z-index: 1;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 23px;
+}
+
+.input-with-icon{
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
 }
 
 /*-----text---------*/
@@ -62,13 +83,19 @@ body{
 /*-------button-------*/
 #login-button{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #4CAF50;
+    background-color: #49c14d;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    margin-top: 20px;
-    border-radius: 7px;
+    width: 95%;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
+
+#login-button:hover{
+    scale: 1.03;
+    background: #4CAF50;
+}
+

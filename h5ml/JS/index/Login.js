@@ -1,11 +1,16 @@
 
-function UserLogin(){
+let userDictionary ={
+     username:'',
+     password:''
+}
+
+function UserLogin() {
      const username = document.getElementById('username').value;
      const password = document.getElementById('password').value;
      const errorMsg = document.getElementById('login-ErrorText');
 
      try{
-          if (username === 'a' && password === '1'){
+          if (username === userDictionary['username'] && password === userDictionary['password']){
                window.location.href = "/h5ml/pages/mainPage.html";
           }
           else{

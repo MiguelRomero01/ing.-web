@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videojuegos</title>
     <link rel="stylesheet" href="css/index_Style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 <body>
     <main>
         <div id="login">
             <div class="Login-container">
-                <h1 id="Login-mainTitle">Iniciar Sesión</h1>
+                <h1 id="Login-mainTitle">Login</h1>
                 
                 <form class="Login-form">
-                    <input type="text" id="username" class="Login-inputs" placeholder="usuario" required>
+                    <div class="input-with-icon">
+                        <!--Username-->
+                        <label class="labels-formsInput" for="username"><i class="bi bi-person-fill"></i></label>
+                        <input type="text" id="username" class="Login-inputs" placeholder="usuario" required>
+                    </div>
     
-                    <input type="password" id="password" class="Login-inputs" placeholder="Contraseña" required>
+                    <div class="input-with-icon">
+                        <!--Password-->
+                        <label class="labels-formsInput" for="username"><i class="bi bi-key-fill"></i></label>
+                        <input type="password" id="password" class="Login-inputs" placeholder="Contraseña" required>
+                    </div>
                 </form>
                 
                 <button type="submit" id="login-button" onclick="UserLogin()">Iniciar Sesión</button>

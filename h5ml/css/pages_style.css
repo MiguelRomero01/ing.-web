@@ -1,10 +1,45 @@
 /*------divs--------*/
-.gamesMicrosoft-container {
+.gamesMicrosoft-container,.SonyGames-container {
     display: flex;
 }
 
+#container-Videogames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
 
+.linkref-Videogame {
+    margin-left: 5vw;
+    transition: all 0.3s ease;
+}
+
+.linkref-Videogame:hover {
+    scale: 1.1;
+    background-color: rgb(201, 198, 198);
+    box-shadow: #444242 10px 10px 10px 1px;
+}
 /*--------titles-------*/
+ 
+.mainTitles {
+    color: crimson;
+    font-size: 50px;
+    margin: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.subtitles {
+    color: rgb(195, 31, 64);
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(201, 42, 74, 0.24);
+}
+
 .subtitles-games {
     text-align: center;
     font-size: 35px;
@@ -13,7 +48,26 @@
     color: white;
     padding: 6px;
 }
+/*-----text-----*/
+.mainText {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*-------links----------*/
+.linkref-Videogame a {
+    text-decoration: none;
+}
 
+.linkref-Videogame p i {
+    color: black;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.linkref-Videogame p b {
+    color: #444242;
+    padding-left: 5px;
+}
 
 /*-----Menu desplegable--------*/
 
@@ -60,7 +114,11 @@
 }
 
 
-/*-images-*/
+/*-------------images-------*/
+.videogame-img {
+    width: 15em;
+    height: 13em;
+}
 
 .dropMenu-img-videogames {
     width: 130px;
