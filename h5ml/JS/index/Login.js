@@ -1,7 +1,7 @@
 
 let userDictionary ={
-     username:'',
-     password:''
+     username:'a',
+     password:'1'
 }
 
 function UserLogin() {

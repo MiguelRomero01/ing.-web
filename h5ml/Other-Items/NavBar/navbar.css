@@ -1,0 +1,25 @@
+#navbar-home{
+     font-size: 30px;
+     margin-right: 20px;
+     color: crimson;
+}
+
+#navbar-xbox,#navbar-sony,#navbar-switch{
+     font-size: 22px;
+     margin-right: 1.5vw;
+}
+
+.nav-item:hover{
+     transition: all 0.4s ease;
+     scale: 1.16;
+}
+
+#navbar-xbox:hover{
+     color: rgb(11, 151, 18);
+}
+#navbar-sony:hover{
+     color: rgb(20, 85, 150);
+}
+#navbar-switch:hover{
+     color: rgb(255, 2, 2);
+}
