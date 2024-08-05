@@ -1,13 +1,17 @@
-
-/*------divs--------*/
-.gamesMicrosoft-container,.SonyGames-container {
-    display: flex;
+body {
+    background: linear-gradient(white, rgb(182, 180, 180));
 }
 
+/*------ Containers and Layouts ------*/
+.gamesMicrosoft-container,
+.SonyGames-container,
 #container-Videogames {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#container-Videogames {
     height: 60vh;
     width: 100%;
 }
@@ -18,18 +22,20 @@
 }
 
 .linkref-Videogame:hover {
-    scale: 1.1;
+    transform: scale(1.1);
     background-color: rgb(201, 198, 198);
-    box-shadow: #444242 10px 10px 10px 1px;
+    box-shadow: #444 10px 10px 10px 1px;
 }
-/*--------titles-------*/
- 
+
+/*-------- Titles -------*/
 .mainTitles {
     color: crimson;
-    font-size: 50px;
-    margin: 4vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    margin: 3vh;
+    font-family: 'Gill Sans', sans-serif;
     font-weight: bolder;
+    text-align: center;
+    text-shadow: #000 3px 3px 3px;
 }
 
 .subtitles {
@@ -37,24 +43,26 @@
     padding: 5px;
     font-size: 40px;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', sans-serif;
     background-color: rgba(201, 42, 74, 0.24);
 }
 
 .subtitles-games {
-    text-align: center;
     font-size: 35px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, serif;
     background-color: #333;
     color: white;
     padding: 6px;
+    text-align: center;
 }
-/*-----text-----*/
+
+/*----- Text -----*/
 .mainText {
     font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', serif;
 }
-/*-------links----------*/
+
+/*------- Links -------*/
 .linkref-Videogame a {
     text-decoration: none;
 }
@@ -66,56 +74,11 @@
 }
 
 .linkref-Videogame p b {
-    color: #444242;
+    color: #444;
     padding-left: 5px;
 }
 
-/*-----Menu desplegable--------*/
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-
-/*-------------images-------*/
+/*------------- Images -------------*/
 .videogame-img {
     width: 15em;
     height: 13em;
@@ -130,4 +93,99 @@
     width: 50%;
     height: 40%;
     margin: 10px;
+}
+
+#carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+.carousel,
+.carousel-inner {
+    display: flex;
+}
+
+.carousel {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/*-------- Dropdown Menu --------*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7c7c7c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropMenu-img-videogames {
+    width: 100%;
+    height: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }

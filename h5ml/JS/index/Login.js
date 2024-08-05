@@ -1,7 +1,7 @@
 
 let userDictionary ={
-     username:'a',
-     password:'1'
+     username:'admin',
+     password:'123'
 }
 
 function UserLogin() {
@@ -18,6 +18,6 @@ function UserLogin() {
           }
      }
      catch(error){
-         console.error('An error occurred:', error);
+         console.error('Ocurrió un error. Revisarlo:', error);
      }
 }

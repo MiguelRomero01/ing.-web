@@ -1,7 +1,13 @@
 #navbar-home{
      font-size: 30px;
      margin-right: 20px;
+     color: rgb(115, 115, 115);
+     transition: all 0.4s ease;
+}
+
+#navbar-home:hover{
      color: crimson;
+     font-size: 32px;
 }
 
 #navbar-xbox,#navbar-sony,#navbar-switch{

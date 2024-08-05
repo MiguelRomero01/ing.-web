@@ -4,7 +4,6 @@ body {
      background: linear-gradient(rgb(255, 255, 255), rgb(209, 209, 209));
  }
  /*-----------divs-------------*/
- 
  .corp-container{
      margin-left: 5vw;
      transition: all 0.3s ease;
@@ -17,6 +16,27 @@ body {
  }
  
  
+/*---nav bar-----*/
+#inicio-navbar{
+    font-size: 23px;
+    transition: all 0.4s ease;
+}
+
+.nav-item{
+    font-size: 21px;
+    margin-left: 1.3vw;
+    transition: all 0.4s ease;
+}
+
+.nav-item:hover{
+    scale: 1.07;
+}
+
+#inicio-navbar:hover{
+    color: crimson;
+    scale: 1.08;
+}
+
  /*-----------Tablas------------*/
  
  #corps-table {
@@ -52,10 +72,12 @@ body {
  
  .mainTitles {
      color: crimson;
-     font-size: 50px;
-     margin: 4vh;
+     font-size: 60px;
+     margin: 3vh;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      font-weight: bolder;
+     text-align: center;
+     text-shadow: #000000 3px 3px 3px;
  }
 
  .subtitles {
@@ -79,6 +101,7 @@ body {
  .mainText {
      font-size: 25px;
      font-family: 'Times New Roman', Times, serif;
+     margin: 15px;
  }
  
  
@@ -91,13 +114,23 @@ body {
  /*------------Imagenes---------------*/
  
  .mainImage {
-     width: 50vw;
-     height: 40vw;
-     margin-bottom: 8vh;
+     display: block;
+     margin: auto;
+     width: 90%;
+     height: 60vw;
+     margin-bottom: 10vh;
  }
  
  .corp-img,
  .videogame-img {
      width: 15em;
      height: 13em;
+ }
+
+ .secondary-img{
+    display: block;
+     margin: auto;
+     width: 70%;
+     height: 40vw;
+     margin-bottom: 10vh;
  }
