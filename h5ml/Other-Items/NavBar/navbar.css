@@ -1,31 +1,39 @@
-#navbar-home{
-     font-size: 30px;
-     margin-right: 20px;
-     color: rgb(115, 115, 115);
-     transition: all 0.4s ease;
+#x {
+    position: sticky;
 }
 
-#navbar-home:hover{
-     color: crimson;
-     font-size: 32px;
+#navbar-home {
+    font-size: 30px;
+    margin-right: 20px;
+    color: rgb(115, 115, 115);
+    transition: all 0.4s ease;
 }
 
-#navbar-xbox,#navbar-sony,#navbar-switch{
-     font-size: 22px;
-     margin-right: 1.5vw;
+#navbar-home:hover {
+    color: crimson;
+    font-size: 32px;
 }
 
-.nav-item:hover{
-     transition: all 0.4s ease;
-     scale: 1.16;
+#navbar-xbox,
+#navbar-sony,
+#navbar-switch {
+    font-size: 22px;
+    margin-right: 1.5vw;
 }
 
-#navbar-xbox:hover{
-     color: rgb(11, 151, 18);
+.nav-item:hover {
+    transition: all 0.4s ease;
+    scale: 1.16;
 }
-#navbar-sony:hover{
-     color: rgb(20, 85, 150);
+
+#navbar-xbox:hover {
+    color: rgb(11, 151, 18);
 }
-#navbar-switch:hover{
-     color: rgb(255, 2, 2);
+
+#navbar-sony:hover {
+    color: rgb(20, 85, 150);
+}
+
+#navbar-switch:hover {
+    color: rgb(255, 2, 2);
 }
