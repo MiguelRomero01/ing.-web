@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titleCuadratica"> Formula cuadratica: </label>
+        <form id="userForm">
+
+            <label for="a-cuadratica">Valor de a</label>
+            <input type="num" id="a-cuadratica" name="a-cuadratica1" required><br><br>
+
+            <label for="b-cuadratica">Valor de b</label>
+            <input type="num" id="b-cuadratica" name="b-cuadratica1" required><br><br>
+
+            <label for="c-cuadratica">Valor de c</label>
+            <input type="num" id="c-cuadratica" name="c-cuadratica1" required><br><br>
+
+        </form>
+
+        <button type="button" onclick="Calcular()">Calcular</button>
+        <script>
+            function Calcular() {
+                a_value = parseInt(document.getElementById("a-cuadratica").value);
+                b_value = parseInt(document.getElementById("b-cuadratica").value);
+                c_value = parseInt(document.getElementById("c-cuadratica").value);
+
+                formulaX1 = (-1 * (b_value) + ((b_value ** 2) - (4 * a_value * c_value)) ** 0.5) / (2 * a_value)
+                formulaX2 = (-1 * (b_value) - ((b_value ** 2) - (4 * a_value * c_value)) ** 0.5) / (2 * a_value)
+
+                document.write("El valor de x1 es: ", formulaX1)
+                document.write("<br>El valor de x2 es: ", formulaX2)
+            }
+        </script>
+</body>
+
+</html>
